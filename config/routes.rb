@@ -29,9 +29,9 @@ root 'posts#index'
   #   end
 
   resources :posts do 
-    resources :comments 
-  end
-
+  resources :comments
+  end 
+  
   # Example resource route with sub-resources:
   #   resources :products do
   #     resources :comments, :sales
