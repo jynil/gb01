@@ -1,0 +1,7 @@
+<%= render 'shared/title', title: 'All Categories'%>
+
+<% @categories.each do |category| %>
+
+    <p><%= category.name %></p>
+
+<% end %>
