@@ -33,8 +33,9 @@ get '/logout', to: 'sessions#destroy'
 
   resources :users, only: [:new, :create, :edit, :update, :show]
   resources :categories, only: [:index, :new, :create]
+  
   resources :posts do 
-  resources :comments
+    resources :comments
   end 
   
   # Example resource route with sub-resources:
