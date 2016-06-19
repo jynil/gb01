@@ -6,7 +6,13 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-Post.create(title: "First Post", content: "This is my first post!")
-Post.create(title: "Second Post", content: "This is my second post!")
-Post.create(title: "Third Post", content: "This is my third post!")
-Post.create(title: "Fourth Post", content: "This is my fourth post!")
+Post.create(title: "hello!", content: "This is a Pig.", user_id: 1)
+Post.create(title: "Best coffee shop in Taipei", content: "Starbucks?! or what?" user_id: 2)
+Post.create(title: "NBA", content: "Go Phoenix Suns!" user_id: 3)
+Post.create(title: "pls help me ?!", content: "What song is perferctly suitable for wedding???" user_id: 4)
+
+Category.create( :name => "Pets" )
+Category.create( :name => "Sports" )
+Category.create( :name => "Coffee" )
+Category.create( :name => "Music" )
+Category.create( :name => "News" )
