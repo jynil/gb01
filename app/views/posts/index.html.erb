@@ -1,20 +1,6 @@
 <%= render 'shared/title', title: "Post list"%>
 
 
-<p><button type="button" class="btn btn-default">
- <%= link_to "New Post", new_post_path%>
- </button>
- <button type="button" class="btn btn-default">
- <%= link_to "Register", register_path%>
- </button>
-  <button type="button" class="btn btn-default">
- <%= link_to "Log in", login_path%>
- </button>
-
-
-
-</p>
-
 <% @posts.each do |post| %>
    <%= render 'post', post: post %>
 <% end %>
