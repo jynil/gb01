@@ -1,4 +1,4 @@
-<h4>Register</h4>
+<%= render 'shared/title', title: 'Register'%>
 
   <%= form_for @user do |f| %>
 
@@ -11,5 +11,8 @@
     <%= f.password_field :password%>
 
   <br>
+  <br>
+  <br>
+
   <%= f.submit(@user.new_record? ? 'Register' : 'Update Profile', class: 'btn btn-primary') %>
   <% end %>

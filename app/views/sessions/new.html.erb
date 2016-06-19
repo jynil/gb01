@@ -1,5 +1,4 @@
 <%= render 'shared/title', title: 'User Log In'%>
-<hr>
 
   <%= form_tag '/login' do |f| %>
 
@@ -13,5 +12,8 @@
     <%= password_field_tag :password, params[:password] %>
 
   <br>
+  <br>
+  <br>
+
   <%= submit_tag "Login", class: "btn btn-success" %>
   <% end %>
