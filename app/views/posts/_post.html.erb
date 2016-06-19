@@ -1,13 +1,17 @@
   <div class="row">
     <div class="well col-md-6">
+
+      <button type="button" class="btn btn-danger btn-xs"><%= post.user.name %></button>
       <%= render partial: "categories/category", collection: post.categories %>
-    
+
       <p>
         <h4><%= post.title %></h4>
+        <hr>
       </p>
       <p>
         <%= post.content %>
       </p>
+
       <br>
       <span>
         <%= link_to "show this post", post_path(post) %>
