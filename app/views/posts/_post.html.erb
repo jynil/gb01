@@ -15,7 +15,9 @@
       <br>
       <span>
         <%= link_to "show this post", post_path(post) %>
+        <% if logged_in? && post.user == current_user %>
         <%= button_to 'Delete', post_path(post), :method => :delete, :data => { :confirm => "Are you sure?" } %>
+        <% end %>
       </span>
     </div>
   </div>

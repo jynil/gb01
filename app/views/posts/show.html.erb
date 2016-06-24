@@ -9,6 +9,9 @@
       <%= @post.content %>
     </p>
     <br>
+        <% if logged_in? && @post.user.name == current_user.name %>
+        <%= button_to 'Delete', post_path(@post), :method => :delete, :data => { :confirm => "Are you sure?" } %>
+        <% end %>
     <small>posted by </small><%= " #{@post.user.name}" %>
   </div>
 </div>
@@ -23,6 +26,11 @@
       </p>
       <br>
       <small>commented by </small><%= "#{comment.user.name}" %>
+
+       <%# if logged_in? && comment.user.name == current_user.name %>
+        <%#= button_to 'Delete', post_path(comment), :method => :delete, :data => { :confirm => "Are you sure?" } %>
+      <%# end %>
+    
     </div>
   </div>
 <% end %>
